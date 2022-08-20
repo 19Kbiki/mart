@@ -1,1 +1,85 @@
-<p>home works!</p>
+<section class="banner">
+  <div
+    id="carouselExampleFade"
+    class="carousel slide carousel-fade"
+    data-bs-ride="carousel"
+  >
+    <div class="container">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            class="d-block w-100"
+            src="https://www.kiranamarket.com/pub/media/wysiwyg/Amul-Butter-Cookies---Website.jpg"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="https://www.kiranamarket.com/pub/media/wysiwyg/Gone-Mad---Website-_1_.jpg "
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="https://www.kiranamarket.com/pub/media/wysiwyg/Kellogg_s_Pringles_-_Website.png"
+          />
+        </div>
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselExampleFade"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselExampleFade"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+<!-- banner end -->
+
+<!-- product catagory -->
+<section class="product-catagory">
+  <div class="container-fluid">
+    <div class="products">
+      <div class="items" *ngFor="let product of products">
+        <img [src]="product.url" alt="" />
+        <div class="name">
+          <h2>{{ product.name }}</h2>
+          <p>{{ product.pra }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div id="background">
+    <p id="bg-text">
+      Download Our app Download Our app Download Our app Download Our app
+    </p>
+  </div>
+
+  <div id="content">
+    <p>EXCLUSIVE SALES, GET IT NOW!</p>
+    <h2>DOWNLOAD OUR APP</h2>
+    <button>GET Now!</button>
+  </div>
+</section>
+<section>
+  <owl-carousel-o [options]="customOptions">
+    <ng-template carouselSlide>Slide 1</ng-template>
+    <ng-template carouselSlide>Slide 2</ng-template>
+    <ng-template carouselSlide>Slide 3</ng-template>
+  </owl-carousel-o>
+</section>
