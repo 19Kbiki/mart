@@ -1,3 +1,4 @@
+@import "../../variable.scss";
 .navbar-main {
   #topnav {
     padding: 1rem 0;
@@ -124,5 +125,289 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+  }
+}
+.mobile-menu {
+  display: none;
+}
+
+@media screen and (max-width: 468px) {
+  .navbar-main {
+    display: none;
+  }
+  .menu-fix {
+    display: none;
+  }
+  .mobile-menu {
+    position: relative;
+    z-index: 3;
+    display: block;
+    padding: 0.5rem 0;
+    .nabr {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 0;
+      .left-logo {
+        mat-icon {
+          font-size: 1.5rem;
+          padding-right: 2rem;
+        }
+      }
+      .right-icons {
+        mat-icon {
+          font-size: 1.5rem;
+          padding: 0 1.5rem;
+        }
+      }
+    }
+  }
+  .menu-two {
+    position: fixed;
+    top: auto;
+    right: 0;
+    left: 0;
+    content: "";
+    z-index: 3;
+    background-color: #000;
+    box-shadow: 1px 10px 11px 3px #00000017;
+    text-align: center;
+    padding: 2rem 0;
+    margin: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    .nav-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 2rem;
+      button {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        border: none;
+        background-color: transparent;
+        color: $primary-color-red;
+        &.manuicons span {
+          transform: translateX(60px);
+        }
+
+        &.manuicons span:nth-child(1) {
+          transform: translateY(0px);
+          width: 20px;
+          transform: rotate(50deg);
+        }
+
+        &.manuicons span:nth-child(2) {
+          transform: translateY(0px);
+          width: 20px;
+          transform: rotate(128deg);
+        }
+
+        & span {
+          position: absolute;
+          width: 30px;
+          height: 2.5px;
+          background-color: $primary-color-red;
+          border-radius: 4px;
+          transition: 0.5s;
+          right: 15px;
+
+          &:nth-child(1) {
+            transform: translateY(-10px);
+            width: 20px;
+            left: 15px;
+          }
+
+          &:nth-child(2) {
+            transform: translateY(10px);
+            width: 20px;
+            left: 15px;
+          }
+        }
+      }
+    }
+    ul {
+      li {
+        display: block;
+        background-color: rgb(96, 95, 95);
+        margin: 3rem 2rem;
+        border-radius: 0.5rem;
+        a {
+          color: $primari-color-white;
+          padding: 1rem;
+          font-size: 1rem;
+          font-weight: 500;
+          letter-spacing: 0.1rem;
+        }
+      }
+    }
+    .login {
+      li {
+        padding: 1rem;
+        .btn-log {
+          border: 2px solid $primary-color-red;
+          border-radius: 3px;
+          padding: 0.2rem 1rem;
+          color: $primari-color-white;
+          font-size: 0.8rem;
+          background-color: $primary-color-red;
+        }
+        .btn-sign {
+          border: 2px solid $primary-color-red;
+          border-radius: 3px;
+
+          background-color: $primary-color-red;
+          padding: 0.2rem 1rem;
+          color: $primari-color-white;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+  .navbar-main {
+    display: none;
+  }
+  .menu-fix {
+    display: none;
+  }
+  .mobile-menu {
+    position: relative;
+    z-index: 3;
+    display: block;
+    padding: 0.5rem 0;
+    .nabr {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 0;
+      .left-logo {
+        mat-icon {
+          font-size: 1.5rem;
+          padding-right: 2rem;
+        }
+      }
+      .right-icons {
+        mat-icon {
+          font-size: 1.2rem;
+          padding: 0 1rem;
+        }
+      }
+    }
+  }
+  .menu-two {
+    position: fixed;
+    top: auto;
+    right: 0;
+    left: 0;
+    content: "";
+    z-index: 3;
+    background-color: #000;
+    box-shadow: 1px 10px 11px 3px #00000017;
+    text-align: center;
+    padding: 2rem 0;
+    margin: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    .nav-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 2rem;
+      button {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        border: none;
+        background-color: transparent;
+        color: $primary-color-red;
+        &.manuicons span {
+          transform: translateX(60px);
+        }
+
+        &.manuicons span:nth-child(1) {
+          transform: translateY(0px);
+          width: 20px;
+          transform: rotate(50deg);
+        }
+
+        &.manuicons span:nth-child(2) {
+          transform: translateY(0px);
+          width: 20px;
+          transform: rotate(128deg);
+        }
+
+        & span {
+          position: absolute;
+          width: 30px;
+          height: 2.5px;
+          background-color: $primary-color-red;
+          border-radius: 4px;
+          transition: 0.5s;
+          right: 15px;
+
+          &:nth-child(1) {
+            transform: translateY(-10px);
+            width: 20px;
+            left: 15px;
+          }
+
+          &:nth-child(2) {
+            transform: translateY(10px);
+            width: 20px;
+            left: 15px;
+          }
+        }
+      }
+    }
+    ul {
+      li {
+        display: block;
+        background-color: rgb(96, 95, 95);
+        margin: 3rem 2rem;
+        border-radius: 0.5rem;
+        a {
+          color: $primari-color-white;
+          padding: 1rem;
+          font-size: 1rem;
+          font-weight: 500;
+          letter-spacing: 0.1rem;
+        }
+      }
+    }
+    .login {
+      li {
+        padding: 1rem;
+        .btn-log {
+          border: 2px solid $primary-color-red;
+          border-radius: 3px;
+          padding: 0.2rem 1rem;
+          color: $primari-color-white;
+          font-size: 0.8rem;
+          background-color: $primary-color-red;
+        }
+        .btn-sign {
+          border: 2px solid $primary-color-red;
+          border-radius: 3px;
+
+          background-color: $primary-color-red;
+          padding: 0.2rem 1rem;
+          color: $primari-color-white;
+          font-size: 0.8rem;
+        }
+      }
+    }
   }
 }

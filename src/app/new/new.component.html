@@ -1,0 +1,17 @@
+<section class="products-items">
+  <div class="container-fluid">
+    <h1>Nutrilicious Dry Fruits</h1>
+    <owl-carousel-o [options]="customOptions">
+      <ng-container *ngFor="let slide of slidesStore">
+        <ng-template carouselSlide [id]="slide.id">
+          <div class="card">
+            <img class="menu-img" [src]="slide.url" alt="" />
+            <p>{{ slide.name }}</p>
+            <img class="reating" [src]="slide.urlim" alt="" />
+            <h5>{{ slide.price }}</h5>
+          </div>
+        </ng-template>
+      </ng-container>
+    </owl-carousel-o>
+  </div>
+</section>

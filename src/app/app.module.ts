@@ -9,8 +9,21 @@ import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatIconModule } from '@angular/material/icon';
+import { BestComponent } from './best/best.component';
+import { NewComponent } from './new/new.component';
+import { OnComponent } from './on/on.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 @NgModule({
-  declarations: [AppComponent, HomeComponent, NavbarComponent, FooterComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    NavbarComponent,
+    FooterComponent,
+    BestComponent,
+    NewComponent,
+    OnComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -18,6 +31,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatBadgeModule,
     MatIconModule,
     CarouselModule,
+    MatSidenavModule,
+    MatCheckboxModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

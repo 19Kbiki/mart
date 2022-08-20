@@ -2,28 +2,30 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #868e9636;
+  background-color: #cfcfcf36;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  padding: 0;
-  margin: 0;
-}
-ul {
-  margin: 0;
-  padding: 0;
-}
-li {
-  list-style: none;
-  display: inline;
-}
-a {
-  text-decoration: none;
+.mat-typography {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    padding: 0;
+    margin: 0;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style: none;
+    display: inline;
+  }
+  a {
+    text-decoration: none;
+  }
 }
 
 html,

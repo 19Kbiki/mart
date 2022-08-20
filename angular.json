@@ -105,5 +105,7 @@
       }
     }
   },
-  "defaultProject": "mart"
+  "cli": {
+    "analytics": "557e1b13-ede5-4dda-94c1-dc39071ef4f6"
+  }
 }
